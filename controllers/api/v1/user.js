@@ -57,7 +57,6 @@ module.exports.createSession = async function (req, res) {
 // Register a new User
 module.exports.register = async function (req, res) {
   try {
-    console.log(req.body);
     if (!req.body.phone || !req.body.password) {
       return res.status(400).json({
         message: "Bad Request",

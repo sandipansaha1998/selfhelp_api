@@ -9,6 +9,7 @@ router.post(
   passport.authenticate("jwt", { session: false }),
   vital_api.add
 );
+// Gets the latest vital record
 router.get(
   "/latest/:type",
   passport.authenticate("jwt", { session: false }),
